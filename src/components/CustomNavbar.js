@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -10,7 +11,7 @@ const CustomNavbar = () => {
     <Navbar.Toggle aria-controls="navbar-nav" />
     <Navbar.Collapse id="navbar-nav">
       <Nav className="ml-auto">
-        <Nav.Link href="#">About Me</Nav.Link>
+      <Nav.Link as={Link} to="/aboutme">About Me</Nav.Link>
         <Nav.Link href="#">Portfolio</Nav.Link>
         <Nav.Link href="#">Contact</Nav.Link>
         <Nav.Link href="#">Resume</Nav.Link>

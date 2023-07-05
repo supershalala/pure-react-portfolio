@@ -1,18 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import CustomNavbar from './components/CustomNavbar';
-import CustomFooter from './components/Footer';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Redirect } from 'react-router-dom';
+import Layout from './Layout';
+import AboutMe from './pages/AbooutMe';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <CustomNavbar />
-      <header></header>
-      
-
-      <CustomFooter />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+        <Route exact path="/">
+          <Route component={AboutMe} />
+        </Route>
+          <Route  path="/aboutme" element={<AboutMe/>} />
+        </Routes>
+      </Layout>
+    </Router>
   );
-}
+};
 
 export default App;
