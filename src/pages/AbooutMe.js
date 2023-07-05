@@ -9,11 +9,23 @@ return (
 
     <Container>
       <Row>
-        <Col>
-          <Image src={linkedinDP} alt="Image 1" />
-          <h3>Image 1 Title</h3>
+        <Col className="text-center">
+          <Image src={linkedinDP} alt="Image 1" className="mx-auto"/>
+          <h3>Adam Shalala</h3>
         </Col>
         
+      </Row>
+
+      <p>
+      I am Adam Shalala, a junior full stack web developer who had the privilege of learning at Sydney University. My passion for coding and web development has driven me to constantly learn and grow. With a strong foundation in web development principles and a keen eye for detail, I strive to create dynamic and user-friendly websites that exceed expectations. Problem-solving and effective communication are among my strengths, making me a valuable asset to any team. With a drive for continuous learning and a dedication to producing high-quality results, I am poised to make a significant impact in the world of web development.
+
+      </p>
+
+
+      <Row>
+
+
+
       </Row>
     </Container>
 
