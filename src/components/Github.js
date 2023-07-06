@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Col } from 'react-bootstrap';
+
 import '../index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Github = ({ username }) => {
   const [repos, setRepos] = useState([]);
@@ -56,7 +58,7 @@ const Github = ({ username }) => {
                 <img src={imageUrls[index]} alt={repo.name} className="github-img" />
               </div>
             )}
-            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-decoration-none px-3">
               {repo.name}
             </a>
           </Col>

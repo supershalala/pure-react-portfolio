@@ -6,9 +6,9 @@ const Portfolio = () => {
   const username = 'supershalala';
 
   return (
-    <div>
+    <div >
     
-      <Github username={username} />
+      <Github username={username}  />
     </div>
   );
 };

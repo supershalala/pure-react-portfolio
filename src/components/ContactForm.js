@@ -32,7 +32,7 @@ const ContactForm = () => {
     <div>
       <h2>Contact Form</h2>
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="formName">
+        <Form.Group controlId="formName" className='mt-3 '>
           <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
@@ -54,7 +54,7 @@ const ContactForm = () => {
           <Form.Control.Feedback type="invalid">{errors.name}</Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group controlId="formEmail">
+        <Form.Group controlId="formEmail" className='mt-3'>
           <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
@@ -81,7 +81,7 @@ const ContactForm = () => {
           <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group controlId="formMessage">
+        <Form.Group controlId="formMessage" className='mt-3'>
           <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
@@ -104,7 +104,7 @@ const ContactForm = () => {
           <Form.Control.Feedback type="invalid">{errors.message}</Form.Control.Feedback>
         </Form.Group>
 
-        <Button  type="submit " className='custom-button' >
+        <Button  type="submit " style={{color: 'white', backgroundColor: "red"}} className='mt-2 w-100' >
           Submit
         </Button>
       </Form>
