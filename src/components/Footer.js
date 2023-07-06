@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 const CustomFooter = () => {
 return(
 
-    <footer className="footer">
+    <footer className="footer" style={{ backgroundColor: 'rgb(25, 23, 22)' }}>
     <div className="container">
       <div className="row">
         <div className="col text-center">

@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
   return (
     <div>
       <CustomNavbar />
-      <main>{children}</main>
+      <main style={{ backgroundColor: 'rgb(224, 226, 219)', minHeight: '80vh' }}>
+        {children}
+        </main>
       <Footer />
     </div>
   );

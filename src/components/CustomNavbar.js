@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const CustomNavbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar  expand="lg"style={{ backgroundColor: 'rgb(230, 175, 46)' }}>
     <Navbar.Brand>Adam Shalala</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbar-nav" />
     <Navbar.Collapse id="navbar-nav">
