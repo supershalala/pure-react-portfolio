@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Col } from 'react-bootstrap';
+import '../index.css';
 
 const Github = ({ username }) => {
   const [repos, setRepos] = useState([]);
@@ -47,12 +48,13 @@ const Github = ({ username }) => {
 
   return (
     <div>
-     
       <div className="row">
         {repos.map((repo, index) => (
-          <Col key={repo.id} xs={12} md={6} lg={4} className="my-3">
+          <Col key={repo.id} xs={12} sm={6} lg={4} className="my-3">
             {imageUrls[index] && (
-              <img src={imageUrls[index]} alt={repo.name} className="img-fluid" />
+              <div className="github-img-container">
+                <img src={imageUrls[index]} alt={repo.name} className="github-img" />
+              </div>
             )}
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
               {repo.name}

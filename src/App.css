@@ -41,3 +41,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+.github-img-container {
+  height: 250px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
