@@ -12,10 +12,11 @@ const CustomNavbar = () => {
     <Navbar.Toggle aria-controls="navbar-nav" />
     <Navbar.Collapse id="navbar-nav">
       <Nav className="ml-auto">
-        <Nav.Link as={Link} to="/aboutme">About Me</Nav.Link>
-        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-        <Nav.Link href="/contact">Contact</Nav.Link>
-        <Nav.Link as="a" href="/adam-shalala-resume.pdf" download>Resume</Nav.Link>
+      <Nav.Link as={Link} to="/aboutme" className="custom-link" activeClassName="active-link">  About Me</Nav.Link>
+<Nav.Link href="/portfolio" className="custom-link" activeClassName="active-link">Portfolio</Nav.Link>
+<Nav.Link href="/contact" className="custom-link" activeClassName="active-link">Contact</Nav.Link>
+<Nav.Link as="a" href="/adam-shalala-resume.pdf" download className="custom-link">Resume</Nav.Link>
+
       </Nav>
     </Navbar.Collapse>
   </Navbar>
