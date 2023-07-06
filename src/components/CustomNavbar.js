@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 const CustomNavbar = () => {
   return (
     <Navbar bg="light" expand="lg">
-    <Navbar.Brand href="#">Logo</Navbar.Brand>
+    <Navbar.Brand href="/aboutme">Adam Shalala</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbar-nav" />
     <Navbar.Collapse id="navbar-nav">
       <Nav className="ml-auto">
