@@ -6,7 +6,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h1>My App</h1>
+      <h1>Previous Works</h1>
       <Github username={username} />
     </div>
   );
