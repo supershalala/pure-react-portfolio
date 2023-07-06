@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import '../index.css';
+
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -102,7 +104,7 @@ const ContactForm = () => {
           <Form.Control.Feedback type="invalid">{errors.message}</Form.Control.Feedback>
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button  type="submit " className='custom-button' >
           Submit
         </Button>
       </Form>

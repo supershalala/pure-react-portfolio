@@ -56,3 +56,13 @@
   height: 100%;
   width: 100%;
 }
+
+.custom-button {
+  background-color: rgb(29, 15, 77);
+  border-color: rgb(14, 10, 47);
+  color: white;  
+}
+.custom-button:hover, .custom-button:focus, .custom-button:active {
+  background-color: rgb(10, 6, 40);
+  border-color: rgb(41, 32, 119);
+}
