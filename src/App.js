@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Redirect } from 'react-router-d
 import Layout from './Layout';
 import AboutMe from './pages/AbooutMe';
 import Portfolio from './pages/Portfolio';
+import ContactMe from './pages/ContactMe';
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         </Route>
           <Route  path="/aboutme" element={<AboutMe/>} />
           <Route  path="/portfolio" element={<Portfolio/>} />
+          <Route  path="/contact" element={<ContactMe/>} />
+
 
         </Routes>
       </Layout>
